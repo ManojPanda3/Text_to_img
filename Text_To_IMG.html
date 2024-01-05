@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html{
+background-color:black;
+color:white;
+}
+.UserInputs{
+height:100%;
+width:auto;
+}
+#Display{
+height:auto;
+width:80%;
+border:2px solid white;
+border-radius:100px;
+padding:0px;
+margin:3rem;
+}
+</style>
+<title>Text to Image Generater By Manoj</title>
+</head>
+<body>
+<center><h1>Text to Image Generater</h1></center>
+<hr>
+<br>
+<div class="UserInputs">
+<center><p class="userInputHeading;"><b>User Inputs</b></p></center>
+<center><textarea id="prompt" style="
+  margine:10px;
+  height:10%;width:50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+">Image of earth,Realism</textarea></center>
+<center><button class ="Button" style="padding:10px;margin-top:5px;" onclick="CreateImage()">Convert</button></center>
+</div>
+<center><div style="padding-top:10px;margin:0px;"><b>No of image:</b><p id="num"></p></div></center>
+<center><div id="Display"></div></center>
+<script>
+let num = 0
+const CreateImage = ()=> {
+let prompts = document.getElementById("prompt").value
+num+=1
+let data = `<a href='https://image.pollinations.ai/prompt/${prompts}'><image style="height:28%;width:28%;float:left;margin:1rem;padding:0px;"src='https://image.pollinations.ai/prompt/${prompts}'></image></a>`
+document.getElementById("Display").innerHTML += data;
+document.getElementById("num").innerText = num;
+}
+</script>
+</body>
+</html>
