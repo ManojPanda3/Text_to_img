@@ -1,0 +1,14 @@
+.img {
+  width: 60%;
+  max-width: 600px;
+  min-width: 120px;
+  padding: 1.5rem;
+  margin: 1rem;
+  background-color: var(--clr-bg-1);
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.img > img {
+  height: 100%;
+  width: 100%;
+}

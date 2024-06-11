@@ -1,0 +1,17 @@
+.loading {
+	border: 0.33rem solid #5a5a5a; /* Light grey */
+	border-top: 0.33rem solid var(--clr-assent); /* Blue */
+	border-radius: 50%;
+	width: 1em;
+	aspect-ratio: 1/1;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

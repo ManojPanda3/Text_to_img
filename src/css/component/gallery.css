@@ -1,0 +1,7 @@
+.gallery {
+  width: 100%;
+  height: 100%;
+  background: var(--clr-bg);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
