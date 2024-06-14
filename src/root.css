@@ -2,7 +2,8 @@
   --clr-bg: #0e0e0e;
   --clr-bg-light: #383838;
   --clr-bg-1: #141414;
-  --clr-assent: #c92e07;
+  --clr-bg-2: rgb(31, 31, 37);
+  --clr-assent: #4cca03;
   --clr-sec: #fff;
 }
 html,

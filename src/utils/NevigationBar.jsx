@@ -3,6 +3,7 @@ import { PropTypes } from "prop-types";
 import { Back_button, Menu_btn, Cross_btn } from "../api/ImgHandeler";
 import { device } from "../api/DeviceFinder";
 
+// A function to detect wether the current device is Phone or Desktop
 const currDevice = device(navigator);
 let NavClass = "nevigation";
 if (currDevice) {
@@ -38,6 +39,7 @@ NevigationBar.propTypes = {
   setMenuVisibility: PropTypes.func.isRequired,
 };
 
+// Menu At the side of the website
 export function Menu({ setMenuVisibility }) {
   return (
     <>
